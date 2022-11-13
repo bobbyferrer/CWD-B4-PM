@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Media</title>
+</head>
+<body class="grey darken-4">
+  <div class="container">
+    <h1 class="cyan-text">Media</h1>
+    <section class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <img src="images/img1.jpg" alt="" class="responsive-img">
+        </div>
+        <div class="col s12 m4">
+          <img src="images/img2.jpg" alt="" class="responsive-img circle">
+        </div>
+        <div class="col s12 m4">
+          <img src="images/img3.jpg" alt="" class="responsive-img z-depth-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel cyan lighten-5 z-depth-4">
+            <div class="row valign-wrapper">
+              <div class="col s5">
+                <img src="images/img5.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s7">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8">
+          <div class="video-container">
+            <iframe width="1040" height="585" src="https://www.youtube.com/embed/uPklMSpmvGs" title="Moira - Babalik Sa'yo (Official Live Performance)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <h5 class="grey-text">Moira - Babalik Sa'yo (Official Live Performance)</h5>
+          <p class="grey-text text-lighten-2">turn on subtitles for lyrics + english translation
+            (wait til end for *more special announcements)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <video class="responsive-video" controls>
+            <source src="videos/movie.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <!-- Material box -->
+        <img class="materialboxed responsive-img" src="images/img5.jpg">
+        </div>
+      </div>
+     
+    </section>
+  </div>
+  
+  <div style="height: 1000px;"></div>
+  
+  
+
+
+  <!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $('.materialboxed').materialbox({
+          inDuration: 1000,
+          outDuration: 1000
+        });
+        // Slider
+    
+    });
+  </script>
+</body>
+</html>

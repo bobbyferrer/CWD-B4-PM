@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="grey darken-4">
+    <nav class="red">
+        <a href="" class="brand-logo">Carousel</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="grey-text text-lighten-3">Carousel</h1>
+        <div class="carousel">
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+        </div>
+
+        <h1 class="grey-text text-lighten-3">Full Width Slider</h1>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="img/food.jpeg" alt="">
+            </a>
+        </div>
+        <br><br><br>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+                <a href="" class="btn waves-effect cyan grey-text text-lighten-2">Button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+              </div>
+              <div class="carousel-item black white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+              </div>
+              <div class="carousel-item purple white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="grey-text text-lighten-3">Collapsible</h1>
+                    <ul class="collapsible">
+                        <li class="active">
+                            <div class="collapsible-header">
+                                 <i class="material-icons">filter_drama</i>
+                                 First
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <span>Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Aperiam
+                                harum earum est ipsa consequatur ea.</span>
+                            </div>
+                          </li>
+                        </li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">filter_drama</i>
+                                Second
+                           </div>
+                           <div class="collapsible-body white-text">
+                               <span>Lorem ipsum dolor sit amet, 
+                               consectetur adipisicing elit. Aperiam
+                               harum earum est ipsa consequatur ea.</span>
+                           </div>
+                         </li>
+                        </li>
+                           <div class="collapsible-header">
+                            <i class="material-icons">filter_drama</i>
+                            Third
+                       </div>
+                       <div class="collapsible-body white-text">
+                           <span>Lorem ipsum dolor sit amet, 
+                           consectetur adipisicing elit. Aperiam
+                           harum earum est ipsa consequatur ea.</span>
+                       </div>
+                     </li>
+                    </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div style="height: 500px;"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+   <script>
+        $(document).ready(function() {
+        $('.carousel').carousel({
+            duration: 1000,
+            dist: 10,
+            shift: 10,
+            padding: 10,
+            numVisible: 5,
+            indicators: true
+        });
+        });
+        $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        duration: 1000,
+        indicators: true
+        });
+        
+        $('.collapsible').collapsible({
+            inDuration: 1000,
+            outDuration: 1000,
+            accordion: false
+        });
+    </script>
+</body>
+</html>
